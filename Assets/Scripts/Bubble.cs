@@ -15,10 +15,11 @@ public class Bubble : MonoBehaviour, IPointerClickHandler
             Destroy(gameObject);
     }
 
-    public void SetCharacter(char c)
+    public void SetCharacter(char c,Color _color)
     {
         character = c;
         characterText.text = c.ToString();
+        characterText.color=_color;
     }
 
     public void OnPointerClick(PointerEventData eventData)
