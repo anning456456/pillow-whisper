@@ -1807,7 +1807,7 @@ GameObject:
   - component: {fileID: 929139237}
   - component: {fileID: 929139240}
   - component: {fileID: 929139239}
-  - component: {fileID: 929139238}
+  - component: {fileID: 929139241}
   m_Layer: 5
   m_Name: GamePanel
   m_TagString: Untagged
@@ -1834,20 +1834,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.889587, y: -127.35315}
   m_SizeDelta: {x: -200.5787, y: -737.7709}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &929139238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929139236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9edbbac0f4296e46a884801340fdd8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 5652281552681683284, guid: e8e9a3ad336307b40a92629862e7dcc2, type: 3}
-  spawnInterval: 1
 --- !u!114 &929139239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1886,6 +1872,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929139236}
   m_CullTransparentMesh: 1
+--- !u!114 &929139241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929139236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe977fcf1b2e5a445b0dd6e69f04ef9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goPfb: {fileID: 5652281552681683284, guid: e8e9a3ad336307b40a92629862e7dcc2, type: 3}
+  grid: 100
+  xPos: 400
+  yPos: 600
+  spawnInterval: 1
 --- !u!1001 &1027606642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2206,6 +2209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 719233955}
+  scoreText: {fileID: 421555128}
   finalSentenceText: {fileID: 1833987219}
   endPanel: {fileID: 1948078377}
 --- !u!114 &1333804912
@@ -3577,8 +3581,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1200.7876}
-  m_SizeDelta: {x: 0, y: -2401.575}
+  m_AnchoredPosition: {x: 0, y: 722.7893}
+  m_SizeDelta: {x: 0, y: -1445.5784}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2078545284
 MonoBehaviour:

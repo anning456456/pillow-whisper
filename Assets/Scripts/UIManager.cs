@@ -5,6 +5,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
     public Text timerText;
+    public Text scoreText;
     public Text finalSentenceText;
     public GameObject endPanel;
 
@@ -24,4 +25,9 @@ public class UIManager : MonoBehaviour
     {
         endPanel.SetActive(true);
     }
-} 
+
+    public void ShowScore(int score)
+    {
+        scoreText.text = score.ToString();
+    }
+}
