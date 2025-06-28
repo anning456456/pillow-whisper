@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 4964593391927228867}
   - component: {fileID: 4262351962233669620}
   - component: {fileID: 3608673397119368757}
-  - component: {fileID: 669044160166303222}
+  - component: {fileID: 5425909096022797037}
   m_Layer: 5
   m_Name: Sentence
   m_TagString: Untagged
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &669044160166303222
+--- !u!114 &5425909096022797037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,8 +210,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5652281552681683284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5338360efd987834d8ad82160dbeaa92, type: 3}
+  m_Script: {fileID: 11500000, guid: a9b85ce9d036c164faebe5309ae7f944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterText: {fileID: 2653428216289496564}
+  SentenceText: {fileID: 2653428216289496564}
   floatSpeed: 50

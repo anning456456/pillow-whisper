@@ -214,4 +214,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterText: {fileID: 2653428216289496564}
-  floatSpeed: 23.7
+  floatSpeed: 40.7
