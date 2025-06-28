@@ -41,19 +41,28 @@ public class BubbleManager : MonoBehaviour
     {
         var list = new List<Bubble>();
         var rect = (transform as RectTransform).rect;
+        float yMax = rect.height * 0.5f - grid;
         foreach (var b in bubbles)
         {
+            if (b == null)
+            {
+                list.Add(b);
+                continue;
+            }
             var rectTrans = b.GetComponent<RectTransform>();
-            if (rectTrans.anchoredPosition.y > rect.height)
-            //if ((b.transform as RectTransform).rect.yMax >= yMax)
+            if (rectTrans.anchoredPosition.y > yMax)
             {
                 list.Add(b);
             }
         }
         for (int i = 0; i < list.Count; i++)
         {
+
             bubbles.Remove(list[i]);
-            list[i].gameObject.SetActive(false);
+            if (list[i] != null)
+            {
+                list[i].gameObject.SetActive(false);
+            }
         }
     }
 
