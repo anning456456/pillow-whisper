@@ -1,2 +1,2 @@
-# pillow-whisper
-CIGA20250628
+# pillow-whispersrx
+SRX76
