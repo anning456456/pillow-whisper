@@ -12,8 +12,12 @@ public class WordSlotManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+    }
+    private void Start()
+    {
         btn_Delete.onClick.RemoveAllListeners();
         btn_Delete.onClick.AddListener(OnDeleteClick);
+        UpdateSlots();
     }
 
     public void AddCharacter(char c)
