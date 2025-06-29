@@ -2013,9 +2013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goPfb: {fileID: 5652281552681683284, guid: e8e9a3ad336307b40a92629862e7dcc2, type: 3}
-  grid: 100
-  xPos: 400
-  yPos: 600
+  grid: 50
   spawnInterval: 1
 --- !u!1001 &1027606642
 PrefabInstance:
