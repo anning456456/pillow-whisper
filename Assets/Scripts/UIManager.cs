@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public Text scoreText;
     public Text finalSentenceText;
     public GameObject endPanel;
+    public GameObject successPanel;
 
     void Awake() => Instance = this;
 
@@ -24,6 +25,11 @@ public class UIManager : MonoBehaviour
     public void ShowEndPanel()
     {
         endPanel.SetActive(true);
+    }
+
+     public void ShowSuccessPanel()
+    {
+        successPanel.SetActive(true);
     }
 
     public void ShowScore(int score)

@@ -2338,6 +2338,7 @@ MonoBehaviour:
   scoreText: {fileID: 421555128}
   finalSentenceText: {fileID: 1833987219}
   endPanel: {fileID: 1948078377}
+  successPanel: {fileID: 0}
 --- !u!114 &1333804912
 MonoBehaviour:
   m_ObjectHideFlags: 0
