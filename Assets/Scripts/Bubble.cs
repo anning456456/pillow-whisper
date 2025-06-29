@@ -61,7 +61,6 @@ public class Bubble : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.LogError($"点击： {character}");
         WordSlotManager.Instance.AddCharacter(character);
         MusicManager.Instance.PlayAduioClip(clip);
         Destroy(gameObject);

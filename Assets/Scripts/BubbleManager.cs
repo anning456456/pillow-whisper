@@ -13,9 +13,6 @@ public class BubbleManager : MonoBehaviour
 
     public float grid = 100;
 
-    public int xPos = 400;
-    public int yPos = 600;
-
     public float spawnInterval = 1f;
     private float timer;
     private void Start()
