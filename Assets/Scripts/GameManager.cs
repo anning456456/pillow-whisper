@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
     // 游戏管理器：负责游戏计时与结束逻辑
     public float gameTime = 90f;
     private float timer;
-   
+   public int score;
+   public PlayPillowAnim pillowanim;
 
     private void Awake()
     {
@@ -35,8 +36,19 @@ public class GameManager : MonoBehaviour
 
     void EndGame()
     {
-        Time.timeScale = 0;
-        UIManager.Instance.ShowEndPanel();
+        //Time.timeScale = 0;
+        if(score>=2)
+        {
+        UIManager.Instance.ShowSuccessPanel();
+        pillowanim.StartPlay();
+        timer=0;
+        }
+        else
+        {
+            UIManager.Instance.ShowEndPanel();
+            timer=0;
+        }
+        
        // UIManager.Instance.ShowScore(score);
     }
 }

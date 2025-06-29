@@ -215,3 +215,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SentenceText: {fileID: 2653428216289496564}
   floatSpeed: 50
+  sentenceMove: {fileID: 5652281552681683284, guid: a8fa1b103e7995c40bf882dab9f3e533, type: 3}

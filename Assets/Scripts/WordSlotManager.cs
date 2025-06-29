@@ -10,6 +10,7 @@ public class WordSlotManager : MonoBehaviour
     public Button btn_Delete;
 
     public int score = 0;
+    public AudioClip completeSound;
 
     void Awake()
     {
@@ -33,11 +34,18 @@ public class WordSlotManager : MonoBehaviour
         if (SentenceDatabase.Instance.IsSentence(string.Concat(currentChars)))
         {
             score++;
+            Invoke("PlayCompleteSound",1);
+            GameManager.Instance.score=score;
             UIManager.Instance.ShowScore(score);
             UIManager.Instance.ChangeCurSentence(string.Concat(currentChars));
             currentChars.Clear();
             UpdateSlots();
         }
+    }
+
+    public void PlayCompleteSound()
+    {
+         MusicManager.Instance.PlayAduioClip(completeSound);
     }
 
     void UpdateSlots()

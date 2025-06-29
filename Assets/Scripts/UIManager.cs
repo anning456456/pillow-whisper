@@ -10,6 +10,9 @@ public class UIManager : MonoBehaviour
     public GameObject endPanel;
     public GameObject successPanel;
 
+    string[] bubbleColor = new string[] { "B1BDEF", "F6DAAB", "F7C9CD", "BBD8F6", "CCE8C8" };
+    string[] textColor = new string[] { "8A5FEC", "D8A159", "CA5568", "2179F3", "29A617" };
+
     void Awake() => Instance = this;
 
 
@@ -41,11 +44,12 @@ public class UIManager : MonoBehaviour
         finalSentenceText.text =  sentence;
     // 改变句子背景框和文字颜色
     var bg = finalSentenceText.GetComponentInParent<Image>();
+    int index = Random.Range(0, bubbleColor.Length);
     if (bg != null)
     {
-        bg.color = new Color(0.6f, 0.9f, 0.6f, 1f); // 绿色调，表示完成
+        bg.color =BubbleSpawner.HexToColor(bubbleColor[index]);// 绿色调，表示完成
     }
-    finalSentenceText.color = Color.blue; // 句子字变蓝色
+    finalSentenceText.color = BubbleSpawner.HexToColor(textColor[index]);; // 句子字变蓝色
 
     // 生成新句子，继续游戏
     SentenceDatabase.Instance.PickNewSentence();
