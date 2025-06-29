@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 public class Bubble : MonoBehaviour, IPointerClickHandler
@@ -47,7 +48,8 @@ public class Bubble : MonoBehaviour, IPointerClickHandler
     {
         _image.color = color;
         characterText.color = textColor;
-        characterText.text = text.ToString();
+        character = text;
+        characterText.text = character.ToString();
     }
 
     public void SetCharacter(char c, Color _color)
@@ -59,6 +61,7 @@ public class Bubble : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.LogError($"点击： {character}");
         WordSlotManager.Instance.AddCharacter(character);
         MusicManager.Instance.PlayAduioClip(clip);
         Destroy(gameObject);
