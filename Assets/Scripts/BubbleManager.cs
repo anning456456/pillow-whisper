@@ -61,7 +61,7 @@ public class BubbleManager : MonoBehaviour
             bubbles.Remove(list[i]);
             if (list[i] != null)
             {
-                list[i].gameObject.SetActive(false);
+                list[i].state = Bubble.MoveState.OutArea;
             }
         }
     }

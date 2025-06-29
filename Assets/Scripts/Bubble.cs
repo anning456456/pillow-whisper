@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class Bubble : MonoBehaviour, IPointerClickHandler
 {
+    public AudioClip clip;
     public Image _image;
     public Text characterText;
     public float floatSpeed = 60f;
     private char character;
+
 
     public MoveState state = MoveState.MoveUp;
 
@@ -29,15 +31,9 @@ public class Bubble : MonoBehaviour, IPointerClickHandler
                 break;
             case MoveState.MoveUp:
                 transform.Translate(Vector3.up * floatSpeed * Time.deltaTime);
-                //if (transform.position.y > Screen.height)
-                //{
-                   
-                //}
-
                 break;
             case MoveState.OutArea:
                 Destroy(gameObject);
-                //
                 break;
             case MoveState.Clicked:
                 break;
@@ -64,7 +60,10 @@ public class Bubble : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         WordSlotManager.Instance.AddCharacter(character);
-        Destroy(gameObject); // 可加爆炸特效
+        MusicManager.Instance.PlayAduioClip(clip);
+        Destroy(gameObject);
+        // 可加爆炸特效
+
     }
 
     public List<int> GetEffectPosArea(Vector2 posOffset, float grid)
