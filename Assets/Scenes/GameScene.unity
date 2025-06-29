@@ -2478,10 +2478,10 @@ RectTransform:
   - {fileID: 2117313468}
   m_Father: {fileID: 1333804915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 720, y: 1339}
-  m_SizeDelta: {x: 1384, y: 1080}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 59}
+  m_SizeDelta: {x: -56, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1085128079
 MonoBehaviour:
@@ -3078,7 +3078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de24c4514f312e42b9b939d02b38b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 60
+  gameTime: 120
   score: 0
   pillowanim: {fileID: 31498818}
 --- !u!4 &1356437861
@@ -4349,10 +4349,10 @@ RectTransform:
   - {fileID: 668654723}
   m_Father: {fileID: 1333804915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 720, y: 1339}
-  m_SizeDelta: {x: 1384, y: 1080}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 59}
+  m_SizeDelta: {x: -56, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948078379
 MonoBehaviour:

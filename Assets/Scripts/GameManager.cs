@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         //Time.timeScale = 0;
-        if(score>=2)
+        if(score>=4)
         {
         UIManager.Instance.ShowSuccessPanel();
         pillowanim.StartPlay();
