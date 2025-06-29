@@ -215,6 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5338360efd987834d8ad82160dbeaa92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goPfbDisapper: {fileID: 4328522279296815828, guid: 61be9c4bfa49d154fbefcede503c1394, type: 3}
   clip: {fileID: 8300000, guid: fd48bbe436f3f7b40a4eae152b7f4fce, type: 3}
   _image: {fileID: 0}
   characterText: {fileID: 2653428216289496564}

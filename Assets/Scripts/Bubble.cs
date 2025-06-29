@@ -7,11 +7,13 @@ using UnityEngine.UI;
 
 public class Bubble : MonoBehaviour, IPointerClickHandler
 {
+    public GameObject goPfbDisapper;
     public AudioClip clip;
     public Image _image;
     public Text characterText;
     public float floatSpeed = 60f;
     private char character;
+
 
 
     public MoveState state = MoveState.MoveUp;
@@ -63,9 +65,13 @@ public class Bubble : MonoBehaviour, IPointerClickHandler
     {
         WordSlotManager.Instance.AddCharacter(character);
         MusicManager.Instance.PlayAduioClip(clip);
+
+        var go = Instantiate(goPfbDisapper);
+        go.transform.parent = transform.parent;
+        go.transform.position = transform.position;
+
         Destroy(gameObject);
         // 可加爆炸特效
-
     }
 
     public List<int> GetEffectPosArea(Vector2 posOffset, float grid)
