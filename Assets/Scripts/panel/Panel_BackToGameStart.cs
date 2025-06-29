@@ -10,9 +10,14 @@ public class Panel_BackToGameStart : MonoBehaviour
 {
     public Button btn_Back;
 
-    private void Start()
+    void Start()
     {
-        
+        btn_Back?.onClick.AddListener(() =>
+        {
+            var cenes = SceneManager.GetActiveScene();
+            SceneManager.LoadScene("StartScene");
+            SceneManager.UnloadSceneAsync(cenes);
+        });
     }
 
 }

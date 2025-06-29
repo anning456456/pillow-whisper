@@ -14,7 +14,7 @@ public class Panel_GameStart : MonoBehaviour
         {
             var cenes = SceneManager.GetActiveScene();
             SceneManager.LoadScene("GameScene");
-            SceneManager.UnloadSceneAsync(cenes);
+            //SceneManager.UnloadSceneAsync(cenes);
         });
     }
 
