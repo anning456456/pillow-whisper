@@ -9,6 +9,8 @@ public class WordSlotManager : MonoBehaviour
     private List<char> currentChars = new();
     public Button btn_Delete;
 
+    public int score = 0;
+
     void Awake()
     {
         Instance = this;
@@ -18,6 +20,7 @@ public class WordSlotManager : MonoBehaviour
         btn_Delete.onClick.RemoveAllListeners();
         btn_Delete.onClick.AddListener(OnDeleteClick);
         UpdateSlots();
+        UIManager.Instance.ShowScore(score);
     }
 
     public void AddCharacter(char c)
@@ -29,7 +32,9 @@ public class WordSlotManager : MonoBehaviour
 
         if (SentenceDatabase.Instance.IsSentence(string.Concat(currentChars)))
         {
-            UIManager.Instance.ShowSentence(string.Concat(currentChars));
+            score++;
+            UIManager.Instance.ShowScore(score);
+            UIManager.Instance.ChangeCurSentence(string.Concat(currentChars));
             currentChars.Clear();
             UpdateSlots();
         }

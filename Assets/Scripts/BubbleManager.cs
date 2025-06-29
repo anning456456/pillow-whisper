@@ -21,6 +21,23 @@ public class BubbleManager : MonoBehaviour
         spawner.InitPfb(goPfb);
     }
 
+    /// <summary>
+    /// 当一句话完成时，清空所有气泡并生成新句子的气泡
+    /// </summary>
+    public void ResetBubblesForNewSentence()
+    {
+        // 清除所有现有气泡
+        foreach (var bubble in bubbles)
+        {
+            if (bubble != null)
+            {
+                Destroy(bubble.gameObject);
+            }
+        }
+        bubbles.Clear();
+        
+    }
+
     void Update()
     {
         CheckBubblePos();

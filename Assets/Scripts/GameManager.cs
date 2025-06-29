@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     // 游戏管理器：负责游戏计时与结束逻辑
     public float gameTime = 90f;
     private float timer;
-    private int score = 0;
+   
 
     private void Awake()
     {
@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     {
         timer = 0f;
         UIManager.Instance.UpdateTimer(gameTime);
-        UIManager.Instance.ShowScore(score);
+        //UIManager.Instance.ShowScore(score);
     }
 
     void Update()
@@ -29,14 +29,14 @@ public class GameManager : MonoBehaviour
 
         if (timer >= gameTime)
             EndGame();
-        score = Mathf.FloorToInt(Time.time / 3);
-        UIManager.Instance.ShowScore(score);
+       // score = Mathf.FloorToInt(Time.time / 3);
+        //UIManager.Instance.ShowScore(score);
     }
 
     void EndGame()
     {
         Time.timeScale = 0;
         UIManager.Instance.ShowEndPanel();
-        UIManager.Instance.ShowScore(score);
+       // UIManager.Instance.ShowScore(score);
     }
 }
