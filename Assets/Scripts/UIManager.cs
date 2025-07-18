@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public Text finalSentenceText;
     public GameObject endPanel;
     public GameObject successPanel;
+    public GameObject overPanel;
 
     string[] bubbleColor = new string[] { "B1BDEF", "F6DAAB", "F7C9CD", "BBD8F6", "CCE8C8" };
     string[] textColor = new string[] { "8A5FEC", "D8A159", "CA5568", "2179F3", "29A617" };
@@ -58,11 +59,13 @@ public class UIManager : MonoBehaviour
 
     public void ShowEndPanel()
     {
+        overPanel.SetActive(true);
         endPanel.SetActive(true);
     }
 
      public void ShowSuccessPanel()
     {
+        overPanel.SetActive(true);
         successPanel.SetActive(true);
     }
 
