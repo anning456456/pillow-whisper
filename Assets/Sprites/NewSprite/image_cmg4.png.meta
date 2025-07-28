@@ -54,7 +54,7 @@ TextureImporter:
       213: -6845168815280872511
     second: image_cmg4_16
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -146,6 +146,45 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -527,7 +566,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      image_cmg4_0: 5465528826413683335
+      image_cmg4_1: 196715833030889102
+      image_cmg4_10: -1890033680669175286
+      image_cmg4_11: -1121353441610471467
+      image_cmg4_12: -5760083428666453219
+      image_cmg4_13: -864340249760384337
+      image_cmg4_14: 5837244010623830799
+      image_cmg4_15: -3282830284159300724
+      image_cmg4_16: -6845168815280872511
+      image_cmg4_2: 8619668386839930466
+      image_cmg4_3: -9127919674469190146
+      image_cmg4_4: -3230705926502459334
+      image_cmg4_5: -4160791546014997665
+      image_cmg4_6: -7227119270981740027
+      image_cmg4_7: -7042305951418948055
+      image_cmg4_8: 4303650678289602452
+      image_cmg4_9: 5718004068072950241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
